@@ -1,0 +1,15 @@
+{
+  "name": "recall-desk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A private study desk powered by local QVAC inference",
+  "license": "MIT",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test",
+    "smoke": "node scripts/smoke.js"
+  },
+  "dependencies": {"@qvac/sdk": "0.20.0"}
+}
