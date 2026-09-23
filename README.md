@@ -41,4 +41,4 @@ The first model load needs internet and may take several minutes. QVAC caches th
 
 ---
 
-[MIT License](LICENSE) · [Share on X](https://x.com/KhanAadi20923/status/2102784325590958272?s=20)
+[MIT License](LICENSE) · [Share on X](https://x.com/KhanAadi20923/status/2102786650401366064)
