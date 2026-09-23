@@ -39,4 +39,4 @@ The first model load needs internet and may take several minutes. QVAC caches th
 
 ---
 
-[MIT License](LICENSE) · [Share on X](https://x.com/intent/post?text=Built%20Recall%20Desk%20with%20%40qvac%3A%20turn%20private%20notes%20into%20study%20guides%2C%20practice%20questions%20and%20simple%20explanations%20on%20your%20laptop.%20Local%20inference.%20Open%20source%20under%20MIT.)
+[MIT License](LICENSE) · [Share on X](https://x.com/KhanAadi20923/status/2102752684885594339?s=20)
