@@ -1,0 +1,5 @@
+POST ONLY AFTER VERIFYING THE LOCAL RUN. Replace YOUR_USERNAME and attach your real screenshot.
+
+Built Recall Desk with @qvac: turn private notes into study guides, practice questions and simple explanations, right on your laptop. Local inference, no cloud AI API. Open source (MIT).
+
+https://github.com/YOUR_USERNAME/recall-desk
