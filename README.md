@@ -11,6 +11,8 @@ Open a terminal **inside the folder containing `package.json`**. On Windows, ope
 Run:
 
 ```sh
+git clone https://github.com/Aditimybbby/recall-desk
+cd recall-desk
 npm install
 ```
 
