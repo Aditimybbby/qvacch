@@ -59,7 +59,7 @@ export const server = http.createServer(async (req, res) => {
           for await (const token of generate(history)) {
             count += token.length;
             send({ type: 'token', text: token });
-            if (res.destroyed) break;
+            // Drain a disconnected run before accepting another inference request.
           }
           if (!count) throw new Error('The model returned no text. Try again with shorter notes.');
           send({ type: 'done', seconds: (Date.now() - started) / 1000 });

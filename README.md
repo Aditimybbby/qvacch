@@ -12,7 +12,7 @@ npm run smoke
 npm start
 ```
 
-Open http://127.0.0.1:3210. This first snapshot contains the local engine and a placeholder landing page; the smoke command runs real inference. The next snapshot adds the interactive workspace.
+Open http://127.0.0.1:3210. Click **Try an example**, choose a study mode, and click **Make it click**. The app loads the model automatically, then streams your result. You can also preload it with **Load local model**. The first load may take several minutes.
 
 ## QVAC
 

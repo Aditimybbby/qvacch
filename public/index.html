@@ -1,1 +1,15 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><title>Recall Desk · Core</title><h1>Recall Desk</h1><p>Local QVAC study engine, version 1.</p><p>Run <code>npm run smoke</code> to generate a study guide. The browser study workspace arrives in the next commit.</p></html>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Recall Desk — your notes, understood</title><link rel="stylesheet" href="/style.css"><script type="module" src="/app.js"></script></head>
+<body>
+  <header><a class="brand" href="/" aria-label="Recall Desk home"><span class="mark">r.</span> recall desk</a><span class="local-badge"><span class="dot"></span> Built for your device</span></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">A LITTLE CLARITY. ALL YOURS.</p><h1>Make sense of<br>what you’re learning.</h1><p class="subtitle">Turn a page of notes into your next lightbulb moment.<br>Local AI. A quieter place to study.</p></div><aside class="model-card"><p class="eyebrow">YOUR LOCAL ENGINE</p><h2>Llama 3.2 <span>1B · Q4</span></h2><p id="model-state" aria-live="polite">Ready to load on your computer</p><progress id="progress" max="100" value="0" aria-label="Model download progress" hidden></progress><button id="load" class="secondary">Load local model <span>↗</span></button><small>First load downloads the model. Your notes stay here.</small></aside></section>
+    <section class="workspace" aria-label="Study workspace">
+      <div class="source pane"><div class="pane-top"><h2><span class="step">01</span> Your notes</h2><button id="sample" class="text-button">Try an example ↗</button></div><label class="visually-hidden" for="notes">Paste your notes</label><textarea id="notes" maxlength="6000" placeholder="Paste your lecture notes, a tricky concept, or the thing you keep forgetting…" spellcheck="false"></textarea><div class="source-meta"><span>Only in this session</span><span id="count">0 / 6,000</span></div><div class="controls"><label for="mode">WHAT WOULD HELP?</label><div class="control-row"><select id="mode"><option value="guide">A study guide</option><option value="quiz">Practice questions</option><option value="explain">A simple explanation</option></select><button id="generate" class="primary">Make it click <span>↗</span></button></div></div></div>
+      <div class="result pane"><div class="pane-top"><h2><span class="step">02</span> The lightbulb moment</h2><span id="result-badge" class="result-badge">YOUR SPACE</span></div><div id="empty" class="empty"><div class="spark">✳</div><h3>A little less “wait, what?”</h3><p>Add your notes, choose a mode, and let<br>your own computer connect the dots.</p></div><pre id="output" hidden></pre><div class="result-meta"><span id="activity" role="status">Nothing sent to a cloud AI.</span><span class="powered">QVAC / LOCAL</span></div></div>
+    </section>
+    <p id="error" role="alert" hidden></p>
+    <footer><span>Private by design. Powered by <strong>QVAC.</strong></span><span>AI can make mistakes. Keep your notes close.</span></footer>
+  </main>
+</body></html>
