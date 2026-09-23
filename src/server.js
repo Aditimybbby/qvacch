@@ -3,6 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { buildHistory } from './prompts.js';
 import { modelStatus, loadLocalModel, generate, shutdown } from './engine.js';
+import { log } from './logger.js';
 
 const port = Number(process.env.PORT || 3210);
 if (!Number.isInteger(port) || port < 1 || port > 65535) throw new Error('Invalid PORT.');
@@ -75,8 +76,13 @@ export const server = http.createServer(async (req, res) => {
 });
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  server.listen(port, '127.0.0.1', () => console.log(`Recall Desk → ${origin}\nFirst model load needs internet; notes stay on this machine.`));
+  server.listen(port, '127.0.0.1', () => {
+    log(`Recall Desk is running: ${origin}`);
+    log('Open the link in your browser. The model loads when you click Load local model or Make it click.');
+    log('Keep this terminal open. Press Ctrl+C to stop.');
+  });
   async function stop() {
+    log('Stopping Recall Desk...');
     server.close();
     const timeout = setTimeout(() => process.exit(0), 5000);
     timeout.unref();
